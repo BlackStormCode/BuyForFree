@@ -34,33 +34,160 @@
 
 </head>
 
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleSwitch = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    // تحميل الوضع السابق
+    if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+    }
+
+    toggleSwitch.addEventListener("click", function (event) {
+        event.preventDefault(); // منع التأثير الافتراضي
+        body.classList.toggle("dark-mode");
+
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const loginContainer = document.getElementById("login-container");
+    const mainContent = document.getElementById("main-content");
+    const loginBtn = document.getElementById("login-btn");
+    const loginForm = document.querySelector(".flip-card__form"); // استهداف الفورم
+
+    // إنشاء عنصر الخلفية السوداء
+    const overlay = document.createElement("div");
+    overlay.classList.add("overlay");
+    document.body.appendChild(overlay);
+
+    // عند الضغط على زر "Let's go!"
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // منع إعادة تحميل الصفحة
+
+        loginContainer.style.display = "none"; // إخفاء نموذج تسجيل الدخول
+        overlay.style.display = "none"; // إزالة الخلفية السوداء
+        mainContent.style.display = "block"; // إظهار محتوى الصفحة
+    });
+});
+
+
+
+
+
+
+  </script>
+
+
+
+
+<header>
+
+
+  <h1 title="Buy For Free">B 4 F</h1>
+
+  <nav class="top-">
+
+    <ul class="ahmed">
+
+
+
+
+
+
+        <!-- From Uiverse.io by Nawsome --> 
+        <label class="plane-switch" id="theme-toggle">
+          <input type="checkbox">
+          <div>
+              <div>
+                  <svg viewBox="0 0 13 13">
+                      <path d="M1.55989957,5.41666667 L5.51582215,5.41666667 L4.47015462,0.108333333 L4.47015462,0.108333333 C4.47015462,0.0634601974 4.49708054,0.0249592654 4.5354546,0.00851337035 L4.57707145,0 L5.36229752,0 C5.43359776,0 5.50087375,0.028779451 5.55026392,0.0782711996 L5.59317877,0.134368264 L7.13659662,2.81558333 L8.29565964,2.81666667 C8.53185377,2.81666667 8.72332694,3.01067661 8.72332694,3.25 C8.72332694,3.48932339 8.53185377,3.68333333 8.29565964,3.68333333 L7.63589819,3.68225 L8.63450135,5.41666667 L11.9308317,5.41666667 C12.5213171,5.41666667 13,5.90169152 13,6.5 C13,7.09830848 12.5213171,7.58333333 11.9308317,7.58333333 L8.63450135,7.58333333 L7.63589819,9.31666667 L8.29565964,9.31666667 C8.53185377,9.31666667 8.72332694,9.51067661 8.72332694,9.75 C8.72332694,9.98932339 8.53185377,10.1833333 8.29565964,10.1833333 L7.13659662,10.1833333 L5.59317877,12.8656317 C5.55725264,12.9280353 5.49882018,12.9724157 5.43174295,12.9907056 L5.36229752,13 L4.57707145,13 L4.55610333,12.9978962 C4.51267695,12.9890959 4.48069792,12.9547924 4.47230803,12.9134397 L4.47223088,12.8704208 L5.51582215,7.58333333 L1.55989957,7.58333333 L0.891288881,8.55114605 C0.853775374,8.60544678 0.798421006,8.64327676 0.73629202,8.65879796 L0.672314689,8.66666667 L0.106844414,8.66666667 L0.0715243949,8.66058466 L0.0715243949,8.66058466 C0.0297243066,8.6457608 0.00275502199,8.60729104 0,8.5651586 L0.00593007386,8.52254537 L0.580855011,6.85813984 C0.64492547,6.67265611 0.6577034,6.47392717 0.619193545,6.28316421 L0.580694768,6.14191703 L0.00601851064,4.48064746 C0.00203480725,4.4691314 0,4.45701613 0,4.44481314 C0,4.39994001 0.0269259152,4.36143908 0.0652999725,4.34499318 L0.106916826,4.33647981 L0.672546853,4.33647981 C0.737865848,4.33647981 0.80011301,4.36066329 0.848265401,4.40322477 L0.89131128,4.45169723 L1.55989957,5.41666667 Z" fill="currentColor"></path>
+                  </svg>
+              </div>
+              <span class="street-middle"></span>
+              <span class="cloud"></span>
+              <span class="cloud two"></span>
+          </div>
+        </label>
+
+
+      <li><a class="About" href="">About</a></li>
+
+
+
+
+
+
+      <li><a class="Support" target="_blank" href="https://wa.me/+20109952595">Support</a></li>
+
+
+
+
+      
+      <img src="/imgs/user5947_d9f01c4cf4df.gif" class="card-img-top" alt="...">
+
+
+    </ul>
+
+  </nav>
+
+
+
+</header>
+
+
+
+
+
 <body>
 
-  <header>
 
 
-    <h1 title="Buy For Free">B 4 F</h1>
+<div class="wrapper" id="login-container">
+  <div class="card-switch">
+      <label class="switch">
+         <input type="checkbox" class="toggle">
+         <span class="slider"></span>
+         <span class="card-side"></span>
+         <div class="flip-card__inner">
+            <div class="flip-card__front">
+               <div class="title">Log in</div>
+               <form class="flip-card__form" action="">
+                  <input class="flip-card__input" name="email" placeholder="Email" type="email">
+                  <input class="flip-card__input" name="password" placeholder="Password" type="password">
+                  <button class="flip-card__btn">Let`s go!</button>
+               </form>
+            </div>
+            <div class="flip-card__back">
+               <div class="title">Sign up</div>
+               <form class="flip-card__form" action="">
+                  <input class="flip-card__input" placeholder="Name" type="name">
+                  <input class="flip-card__input" name="email" placeholder="Email" type="email">
+                  <input class="flip-card__input" name="password" placeholder="Password" type="password">
+                  <button class="flip-card__btn">Confirm!</button>
+               </form>
+            </div>
+         </div>
+      </label>
+  </div>   
+</div>
 
-    <nav class="top-">
-
-      <ul class="ahmed">
-
-        <li><a class="dark" href="#">🌙 Dark Mode</a></li>
-
-        <li><a class="About" href="">About</a></li>
-
-        <li><a class="Support" href="">Support</a></li>
-
-        <img src="/imgs/user5947_d9f01c4cf4df.gif" class="card-img-top" alt="...">
-
-
-      </ul>
-
-    </nav>
 
 
 
-  </header>
+
+
+
+
+  
 
   <main>
 
@@ -75,7 +202,7 @@
 
       </h2>
 
-      <div class="div">
+      <div class="div text-box">
 
         <article class="left-section">
 
@@ -83,7 +210,16 @@
 
           <p class="iam"> I born in Egypt in 2008 </p>
           <p class="" class="para">I am 16 years old</p>
-          <a class="chat" target="_blank" href="https://www.nardalhob.com/#id10088">My-Acc</a>
+
+              <div class="bero">
+                
+                  <a class="chat" target="_blank" href="https://www.nardalhob.com/#id10088">My-Acc</a>
+
+                </a>
+
+              </div>
+                        
+          
         </article>
 
         <article class="right-section">
@@ -105,48 +241,101 @@
 
     <section class="sec2 ">
 
-      <h2 dir="rtl">ما الجديد ؟ 🆕</h2>
-      <div class="div">
+      <h2 dir="rtl">  قسم الرتب المصغره 🤖 </h2>
+      <div class="div" id="div">
 
-        <div class="card" style="width: 18rem;">
+        <div class="card top" style="width: 18rem;">
           <img src="/imgs/super-no.png" class="card-img--top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Style Rank </h5>
+            <h5 class="card-title">Style </h5>
             <p dir="rtl" class="card-text"> مظهر مميز ل رتبة السوبر ادمن .. يتم وضعه بدلا من مظهر الرتبه التقليدي </p>
             <a id="buy" href="#" class="btn btn-primary">Buy Now</a>
           </div>
         </div>
 
         <div class="card" style="width: 18rem;">
-          <img src="/imgs/super-no.png" class="card-img--top" alt="...">
+          <img src="/imgs/Vip PNG Transparent Images Free Download _ Vector Files _ Pngtree.png" class="card-img--top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Style Rank </h5>
-            <p dir="rtl" class="card-text"> مظهر مميز ل رتبة السوبر ادمن .. يتم وضعه بدلا من مظهر الرتبه التقليدي </p>
+            <h5 class="card-title">Style </h5>
+            <p dir="rtl" class="card-text"> مظهر VIP مممميز لتمييز العضو بين كافة الاعضاء الاخرين </p>
             <a id="buy" href="#" class="btn btn-primary">Buy Now</a>
           </div>
         </div>
 
         <div class="card" style="width: 18rem;">
-          <img src="/imgs/super-no.png" class="card-img--top" alt="...">
+          <img src="/imgs/ID_NO BACK.png" class="card-img--top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Style Rank </h5>
-            <p dir="rtl" class="card-text"> مظهر مميز ل رتبة السوبر ادمن .. يتم وضعه بدلا من مظهر الرتبه التقليدي </p>
+            <h5 class="card-title">Style </h5>
+            <p dir="rtl" class="card-text">  ايقونه تمنح للاعضاء المميزين ب معرف ID خاص  </p>
             <a id="buy" href="#" class="btn btn-primary">Buy Now</a>
           </div>
         </div>
+
+
+
+
+
+
+
+
+    </section>
+
+    <section class="sec2 ">
+
+      <h2 dir="rtl">قسم الاطارات 👻</h2>
+
+   <!-- From Uiverse.io by MuhammadHasann --> 
+<div class="card">
+  <div class="image_container">
+    <img class="image" src="/imgs/4dff08ee-d400-422a-9172-fee939413761.png" alt="">
+  </div>
+  <div class="title">
+    <!-- <span>New Brand</span> -->
+  </div>
+  <div class="size">
+    <span>New Brand</span>
+    <ul class="list-size">
+      <li class="item-list"><button class="item-list-button">37</button></li>
+      <li class="item-list"><button class="item-list-button">38</button></li>
+      <li class="item-list"><button class="item-list-button">39</button></li>
+      <li class="item-list"><button class="item-list-button">40</button></li>
+      <li class="item-list"><button class="item-list-button">41</button></li>
+    </ul>
+  </div>
+  <div class="action">
+    <div class="price">
+      <span>$2</span>
+    </div>
+    <button class="cart-button">
+      <svg
+        class="cart-icon"
+        stroke="currentColor"
+        stroke-width="1.5"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+          stroke-linejoin="round"
+          stroke-linecap="round"
+        ></path>
+      </svg>
+      <span>Add to cart</span>
+    </button>
+  </div>
+</div>
+
+          
+
+
+     
     </section>
 
 
   </main>
 
-  <footer>
-    <!-- <p dir="rtl">صفحة ستيم لمتابعة الحديثات 🔥</p> -->
-
-    <p class="Designed">Designed and developed by <a target="_blank"
-        href="https://steamcommunity.com/profiles/76561199405237227/">Ahmed Gmal©</a> 2025</p>
-
-
-  </footer>
+  
 
 
   <script src="main.js"></script>
@@ -155,7 +344,14 @@
 
 </body>
 
+<footer>
+  <!-- <p dir="rtl">صفحة ستيم لمتابعة الحديثات 🔥</p> -->
 
+  <p class="Designed">Designed and developed by <a target="_blank" class="fa"
+      href="https://steamcommunity.com/profiles/76561199405237227/">Ahmed Gmal©</a> 2025</p>
+
+
+</footer>
 
 
 

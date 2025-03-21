@@ -23,8 +23,8 @@ header{
 } */
 
 .Support:hover{
-    background-color: #240eec;
-    box-shadow: 0px 0px 25px #240eec;
+    background-color: #09fc01;
+    box-shadow: 0px 0px 25px #09fc01;
 }
 
 .About:hover{
@@ -45,7 +45,7 @@ h1{
 
 a{
     font-size: 18px;
-    color: rgb(0, 0, 0);
+    color: rgb(255 255 255);
     text-decoration: none; 
     border: 2px solid;
     padding: 5px;
@@ -129,6 +129,10 @@ section{
 
 }
 
+.div{
+    margin: 35px 0px 0px 0px ;
+}
+
 .left-section h5{
     font-family: cursive;
     font-size: 22px;
@@ -157,6 +161,11 @@ section{
     
 }
 
+.h5, h5 {
+    font-size: 1.25rem;
+    font-family: 'Pacifico';
+}
+
 
 
 .Change{
@@ -172,7 +181,9 @@ section{
     margin-top: 5px 0 0 0;
     font-family: "Vibur", serif;
     font-size: 19px;
-    b
+    background-color: #01fcef;
+    box-shadow: 0px 0px 25px #01fcef ;
+    
 }
 
 .left-section p{
@@ -206,12 +217,12 @@ section{
 }
 
 
-.right-section img:hover{
+/* .right-section img:hover{
   
     width: 205px;
     height: 205px;
 
-}
+} */
 
 
 .left-section, .right-section{
@@ -249,6 +260,12 @@ article .para{
     padding: 0;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: revert;
+}
+
 
 .center-border {
     /* width: 100px; /* سمك الخط */
@@ -278,10 +295,14 @@ article .para{
 
     display: flex;
 
-    
-  
-    
+    margin: 0px 0 ;
+
 }
+
+
+
+
+
 
 
 .btn:hover{
@@ -306,6 +327,11 @@ footer{
     padding: 15px;
 }
 
+.Designed :hover{
+    background-color: #4b03f3;
+    box-shadow: 0px 0px 25px #4b03f3 ;
+}
+
 footer a{
     border: 2px solid;
     border-radius: 10px;
@@ -314,12 +340,12 @@ footer a{
 }
 
 
-footer a:hover{
+/* footer a:hover{
     font-size: 19px;
     background-color: #ec0e0e;
     box-shadow: 0px 5px 25px #ec0e0e;
 
-}
+} */
 
 
 
@@ -368,4 +394,1197 @@ footer a:hover{
     
   
     
+}
+
+
+.div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* تقليل المسافة بين العناصر */
+    grid-template-columns: repeat(2, 1fr);
+    align-items: stretch;
+}
+
+
+
+.card {
+    margin: 5px; /* تقليل الهامش بين البطاقات */
+    width: 18rem;
+    
+
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.card-body a {
+    margin-top: auto; /* يجعل الزر دائماً في الأسفل */
+}
+.chat:hover{
+    margin-top: 5px 0 0 0;
+    font-family: "Vibur", serif;
+    font-size: 19px;
+    background-color: #01fcef;
+    box-shadow: 0px 0px 25px #01fcef ;
+    
+}
+
+
+
+
+
+/* From Uiverse.io by Creatlydev */ 
+.button {
+    text-decoration: none;
+    line-height: 1;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 10px 10px 20px rgba(0,0,0,.05);
+    background-color: #fff;
+    color: #121212;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button-decor {
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr);
+    transform: translateX(-100%);
+    transition: transform .3s;
+    z-index: 0;
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .button__icon {
+    width: 48px;
+    height: 40px;
+    background-color: var(--clr);
+    display: grid;
+    place-items: center;
+  }
+  
+  .button__text {
+    display: inline-block;
+    transition: color .2s;
+    padding: 2px 1.5rem 2px;
+    padding-left: .75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+  
+  .button:hover .button__text {
+    color: #fff;
+  }
+  
+  .button:hover .button-decor {
+    transform: translate(0);
+  }
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by gharsh11032000 */ 
+.cardd {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    border-radius: 30px;
+    box-shadow: 0 0 25px rgb(146, 143, 143) ;
+    display: flex;
+    
+
+  }
+  
+  .cardd svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .cardd:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .cardd:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .cardd:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
+  
+
+
+
+
+
+
+
+  .carddd{
+    display: flex;
+  }
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by alexruix */ 
+.card {
+    width: 190px;
+    padding: 1.9rem 1.2rem;
+    text-align: center;
+    background: #242425;
+    color: white;
+   }
+   
+   /*Inputs*/
+   .field {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    background-color: #1f2029;
+    border-radius: 4px;
+    padding: .5em 1em;
+   }
+   
+   .input-icon {
+    height: 1em;
+    width: 1em;
+    fill: #ffeba7;
+   }
+   
+   .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+   }
+   
+   /*Text*/
+   .title {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #f5f5f5;
+   }
+   
+   /*Buttons*/
+   .btn {
+    margin: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding: 0.6em 1.2em;
+    background-color: #ffeba7;
+    color: #5e6681;
+    box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+    transition: all .3s ease-in-out;
+   }
+   
+   .btn-link {
+    color: #f5f5f5;
+    display: block;
+    font-size: .75em;
+    transition: color .3s ease-out;
+   }
+   
+   /*Hover & focus*/
+   .field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   
+   .btn:hover {
+    background-color: #5e6681;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+   }
+   
+   .btn-link:hover {
+    color: #ffeba7;
+   }
+
+
+
+
+
+
+
+/* From Uiverse.io by G4b413l */ 
+.chat svg {
+    height: 25px;
+  }
+  
+  .chat {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7e7e7;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    overflow: hidden;
+    height: 50px;
+    width: 200px;
+    margin-left: 36%;
+  }
+  
+  .chat::before, .chat::after {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    transition: 0.25s linear;
+    z-index: 1;
+  }
+  
+  .chat::before {
+    content: "";
+    left: 0;
+    justify-content: flex-end;
+    background-color: #4d60b6;
+  }
+  
+  .chat::after {
+    content: "";
+    right: 0;
+    justify-content: flex-start;
+    background-color: #4453a6;
+  }
+  
+  .chat:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .chat:hover span {
+    opacity: 0;
+    z-index: -3;
+  }
+  
+  .chat:hover::before {
+    opacity: 0.5;
+    transform: translateY(-100%);
+  }
+  
+  .chat:hover::after {
+    opacity: 0.5;
+    transform: translateY(100%);
+  }
+  
+  .chat span {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    font-family: 'Fira Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+  }
+  
+  .chat .social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    
+  }
+  
+  .chat .social-link svg {
+    text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+    transform: scale(1);
+  }
+  
+  .chat .social-link:hover {
+    background-color: rgba(249, 244, 255, 0.774);
+    animation: bounce_613 0.4s linear;
+  }
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* يضمن التوسيط أفقيًا */
+    align-items: center; /* يضمن التوسيط عموديًا */
+    flex-direction: column; /* يضع العناصر فوق بعض عند تصغير الشاشة */
+    gap: 20px; /* يترك مسافة بين العناصر */
+}
+
+.card {
+    width: 90%; /* يضبط عرض العنصر ليملأ المساحة */
+    max-width: 350px; /* يضمن أن العنصر لا يصبح ضخمًا جدًا */
+    margin: 0 auto; /* يضمن التوسيط الأفقي */
+}
+
+/* عند تصغير الشاشة، تصبح العناصر فوق بعضها */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* عرض أكبر للشاشات الصغيرة */
+    }
+}
+
+
+
+/* الحاوية الأساسية */
+.container {
+  display: flex;
+  justify-content: space-between; /* يوزع العناصر */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* كل قسم يأخذ نصف العرض */
+.section {
+  width: 48%;
+}
+
+/* عند تصغير الشاشة للموبايل، نجعل العلوي فقط فوق بعض */
+@media (max-width: 768px) {
+  .top-sections {
+      flex-direction: column; /* العلوي فوق بعض */
+      align-items: center;
+  }
+
+  .top-sections .section {
+      width: 100%; /* ملء الشاشة */
+      text-align: center;
+  }
+}
+
+
+
+/* الحاوية الأساسية */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* كل قسم علوي يأخذ نصف العرض */
+.top-sections .section {
+  width: 48%;
+}
+
+/* الأقسام السفلية بتنسيق Grid */
+.bottom-sections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 أعمدة جنب بعض */
+  gap: 20px;
+}
+
+/* العناصر الفردية */
+.bottom-sections .section {
+  width: 100%;
+}
+
+/* عند تصغير الشاشة للموبايل */
+@media (max-width: 768px) {
+  /* العلوي يصبح فوق بعض */
+  .top-sections {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .top-sections .section {
+      width: 100%;
+      text-align: center;
+  }
+
+  /* السفلي يصبح 2 جنب بعض والتالت تحتهم */
+  .bottom-sections {
+      grid-template-columns: repeat(2, 1fr); /* عمودين جنب بعض */
+  }
+
+  .bottom-sections .section:last-child {
+      grid-column: span 2; /* التالت يأخذ عرض العمودين */
+  }
+}
+
+
+/* ضبط الحاوية */
+.section {
+  display: flex;
+  flex-direction: column; /* يجعل العناصر فوق بعض */
+  align-items: center; /* توسيط العناصر أفقيًا */
+  text-align: center;
+}
+
+/* ضبط الزر */
+.button {
+  margin-top: 10px; /* مسافة بسيطة فوق الزر */
+  display: block;
+  width: 100%; /* يأخذ عرض مناسب */
+  max-width: 200px; /* يحدد أقصى عرض */
+  text-align: center;
+}
+
+/* عند تصغير الشاشة */
+@media (max-width: 600px) {
+  .button {
+      margin: 20px auto 0 auto; /* يجعل الزر في المنتصف */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by Nawsome */ 
+.plane-switch {
+  --dot: #fff;
+  --street: #6B6D76;
+  --street-line: #A8AAB4;
+  --street-line-mid: #C0C2C8;
+  --sky-1: #60A7FA;
+  --sky-2: #2F8EFC;
+  --light-1: rgba(255, 233, 0, 1);
+  --light-2: rgba(255, 233, 0, .3);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.plane-switch input {
+  display: none;
+}
+
+.plane-switch input + div {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  position: relative;
+  overflow: hidden;
+  width: 50px;
+  height: 25px;
+  padding: 1px;
+  border-radius: 13px;
+  background: linear-gradient(90deg, var(--street) 0%, var(--street) 25%, var(--sky-1) 75%, var(--sky-2) 100%) left var(--p, 0%) top 0;
+  background-position-x: var(--p, 0%);
+  background-size: 400% auto;
+  transition: background-position 0.6s;
+}
+
+.plane-switch input + div:before, .plane-switch input + div:after {
+  content: "";
+  display: block;
+  position: absolute;
+  transform: translateX(var(--s, 0));
+  transition: transform 0.3s;
+}
+
+.plane-switch input + div:before {
+  width: 42px;
+  right: 2px;
+  top: 4px;
+  height: 1px;
+  background: var(--street-line);
+  box-shadow: 0 16px 0 0 var(--street-line);
+}
+
+.plane-switch input + div:after {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  left: 23px;
+  top: 1px;
+  -webkit-animation: lights2 2s linear infinite;
+  animation: lights2 2s linear infinite;
+  box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+}
+
+.plane-switch input + div span {
+  display: block;
+  position: absolute;
+}
+
+.plane-switch input + div span.street-middle {
+  top: 12px;
+  left: 21px;
+  width: 3px;
+  height: 1px;
+  transform: translateX(var(--s, 0));
+  background: var(--street-line-mid);
+  box-shadow: 5px 0 0 var(--street-line-mid), 10px 0 0 var(--street-line-mid), 15px 0 0 var(--street-line-mid), 20px 0 0 var(--street-line-mid), 25px 0 0 var(--street-line-mid);
+  transition: transform 0.3s;
+}
+
+.plane-switch input + div span.cloud {
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  background: #fff;
+  position: absolute;
+  top: var(--ct, 8px);
+  left: 100%;
+  opacity: var(--co, 0);
+  transition: opacity 0.3s;
+  -webkit-animation: clouds2 2s linear infinite var(--cd, 0s);
+  animation: clouds2 2s linear infinite var(--cd, 0s);
+}
+
+.plane-switch input + div span.cloud:before, .plane-switch input + div span.cloud:after {
+  content: "";
+  position: absolute;
+  transform: translateX(var(--cx, 0));
+  border-radius: 50%;
+  width: var(--cs, 5px);
+  height: var(--cs, 5px);
+  background: #fff;
+  bottom: 1px;
+  left: 1px;
+}
+
+.plane-switch input + div span.cloud:after {
+  --cs: 6px;
+  --cx: 4px;
+}
+
+.plane-switch input + div span.cloud.two {
+  --ct: 20px;
+  --cd: 1s;
+  opacity: var(--co-2, 0);
+}
+
+.plane-switch input + div div {
+  display: table;
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+  border-radius: 50%;
+  background: var(--dot);
+  transform: translateX(var(--x, 0));
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.35, 1.2);
+}
+
+.plane-switch input + div div svg {
+  width: 13px;
+  height: 13px;
+  display: block;
+  color: var(--c, var(--street));
+  transition: color 0.6s;
+}
+
+.plane-switch input:checked + div {
+  --p: 100%;
+  --x: 25px;
+  --s: -50px;
+  --c: var(--sky-2);
+  --co: .8;
+  --co-2: .6;
+}
+
+@keyframes lights2 {
+  20%, 30% {
+    box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2), 8px 0 0 var(--light-1), 8px 21px 0 var(--light-1), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+  }
+
+  55%, 65% {
+    box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-1), 16px 21px 0 var(--light-1);
+  }
+
+  90%, 100% {
+    box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+  }
+}
+
+@keyframes clouds2 {
+  97% {
+    transform: translateX(-72px);
+    visibility: visible;
+  }
+
+  98%, 100% {
+    visibility: hidden;
+  }
+
+  99% {
+    transform: translateX(-72px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+}
+
+/* الوضع الداكن */
+.dark-mode body {
+  background-color: #121212; /* خلفية داكنة */
+  color: white; /* لون النص أبيض */
+}
+
+/* الوضع الفاتح */
+.light-mode body {
+  background-color: #ffffff; /* خلفية فاتحة */
+  color: black; /* لون النص أسود */
+}
+
+/* الهيدر والفوتر يظلان ثابتين */
+header, footer {
+  background-color: rgb(94, 89, 89) !important; 
+  color: rgb(255 253 253) !important;
+}
+
+
+
+/* From Uiverse.io by MuhammadHasann */ 
+.card {
+  --bg-card: #27272a;
+  --primary: #6d28d9;
+  --primary-800: #4c1d95;
+  --primary-shadow: #2e1065;
+  --light: #d9d9d9;
+  --zinc-800: #18181b;
+  --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--light) 125%);
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  padding: 1rem;
+  width: 14rem;
+  background-color: var(--bg-card);
+
+  border-radius: 1rem;
+
+  margin-top: 30px;
+
+  margin-bottom: -20px;
+}
+
+.image_container {
+  overflow: hidden;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 5;
+
+  width: 100%;
+  height: 8rem;
+  /* background-color: var(--primary-800); */
+
+  border-radius: 0.5rem;
+}
+
+.image_container .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 10rem;
+  fill: var(--light);
+  margin-left: -1px;
+}
+
+.title {
+  overflow: clip;
+
+  width: 100%;
+
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--light);
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.size {
+  /* font-size: 0.75rem; */
+  color: white;
+}
+
+.list-size {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  margin-top: 0.25rem;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+.list-size .item-list {
+  list-style: none;
+}
+
+.list-size .item-list-button {
+  cursor: pointer;
+
+  padding: 0.5rem;
+  background-color: var(--zinc-800);
+
+  font-size: 0.75rem;
+  color: var(--light);
+
+  border: 2px solid var(--zinc-800);
+  border-radius: 0.25rem;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.item-list-button:hover {
+  border: 2px solid var(--light);
+}
+.item-list-button:focus {
+  background-color: var(--primary);
+
+  border: 2px solid var(--primary-shadow);
+
+  box-shadow: inset 0px 1px 4px var(--primary-shadow);
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--light);
+}
+
+.cart-button {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+
+  padding: 0.5rem;
+  width: 100%;
+  background-image: var(--bg-linear);
+
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--light);
+  text-wrap: nowrap;
+
+  border: 2px solid hsla(262, 83%, 58%, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 0.25rem 1px var(--light);
+}
+
+.cart-button .cart-icon {
+  width: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* From Uiverse.io by andrew-demchenk0 */ 
+.wrapper {
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --bg-color-alt: #666;
+  --main-color: #323232;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+/* switch card */
+.switch {
+  transform: translateY(-200px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 50px;
+  height: 20px;
+}
+
+.card-side::before {
+  position: absolute;
+  content: 'Log in';
+  left: -70px;
+  top: 0;
+  width: 100px;
+  text-decoration: underline;
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.card-side::after {
+  position: absolute;
+  content: 'Sign up';
+  left: 70px;
+  top: 0;
+  width: 100px;
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-colorcolor);
+  transition: 0.3s;
+}
+
+.slider:before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  left: -2px;
+  bottom: 2px;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 0 var(--main-color);
+  transition: 0.3s;
+}
+
+.toggle:checked + .slider {
+  background-color: var(--input-focus);
+}
+
+.toggle:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+.toggle:checked ~ .card-side:before {
+  text-decoration: none;
+}
+
+.toggle:checked ~ .card-side:after {
+  text-decoration: underline;
+}
+
+/* card */ 
+
+.flip-card__inner {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  background-color: transparent;
+  perspective: 1000px;
+    /* width: 100%;
+    height: 100%; */
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.toggle:checked ~ .flip-card__inner {
+  transform: rotateY(180deg);
+}
+
+.toggle:checked ~ .flip-card__front {
+  box-shadow: none;
+}
+
+.flip-card__front, .flip-card__back {
+  padding: 20px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: lightgrey;
+  gap: 20px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+}
+
+.flip-card__back {
+  width: 100%;
+  transform: rotateY(180deg);
+}
+
+.flip-card__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title {
+  margin: 20px 0 20px 0;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  color: var(--main-color);
+}
+
+.flip-card__input {
+  width: 250px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--font-color);
+  padding: 5px 10px;
+  outline: none;
+}
+
+.flip-card__input::placeholder {
+  color: var(--font-color-sub);
+  opacity: 0.8;
+}
+
+.flip-card__input:focus {
+  border: 2px solid var(--input-focus);
+}
+
+.flip-card__btn:active, .button-confirm:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+
+.flip-card__btn {
+  margin: 20px 0 20px 0;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+} 
+
+
+
+#main-content {
+  display: none;
+}
+
+
+
+/* توسيط نموذج تسجيل الدخول في منتصف الشاشة */
+#login-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000; /* لضمان ظهوره فوق كل شيء */
+}
+
+/* إخفاء محتوى الصفحة الأساسي */
+#main-content {
+  display: none;
+}
+
+/* جعل الخلفية معتمة أثناء عرض الفورم */
+body.overlay::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* للخلفية */
+}
+
+
+
+/* الخلفية السوداء تغطي الشاشة بالكامل */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(95, 95, 95); /* الخلفية سوداء بالكامل */
+  z-index: 999; /* تأكد إنها فوق كل حاجة */
+}
+
+/* تأكد أن الفورم فوق الخلفية السوداء */
+#login-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  z-index: 1000; /* لازم يكون فوق الخلفية السوداء */
+}
+
+
+.fa{
+
 }
